@@ -37,7 +37,8 @@ import CoreVideo
         var pixelBufferCopy: CVPixelBuffer?
         // macOS only support 32BGRA currently.
         let dict: [String: Any] = [
-            kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA,
+            //kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA,
+            kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32RGBA, // TODO: Make configurable
             kCVPixelBufferMetalCompatibilityKey as String: true,
             kCVPixelBufferOpenGLCompatibilityKey as String: true,
             // https://developer.apple.com/forums/thread/712709
